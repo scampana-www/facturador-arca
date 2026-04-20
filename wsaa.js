@@ -127,8 +127,7 @@ async function obtenerToken(produccion = true) {
 }
 
 function formatFechaISO(date) {
-    const pad = n => String(n).padStart(2, "0");
-    return `${date.getFullYear()}-${pad(date.getMonth()+1)}-${pad(date.getDate())}T${pad(date.getHours())}:${pad(date.getMinutes())}:${pad(date.getSeconds())}-03:00`;
+    return date.toISOString(); // UTC puro, formato: 2026-04-20T14:32:00.000Z
 }
 
 module.exports = { obtenerToken };

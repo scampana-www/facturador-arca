@@ -44,7 +44,7 @@ async function obtenerToken(produccion = true) {
         certPem       = fs.readFileSync(certFile, "utf8");
     }
 
-    const desde    = new Date(ahora.getTime() - 10 * 60 * 1000);
+    const desde    = new Date(ahora.getTime() - 60 * 60 * 1000);
     const hasta    = new Date(ahora.getTime() + 12 * 60 * 60 * 1000);
     const uniqueId = Math.floor(Date.now() / 1000).toString();
 

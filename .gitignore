@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.key
+*.crt
+*.p12
+facturas_pdf/
+facturas*.xlsx
